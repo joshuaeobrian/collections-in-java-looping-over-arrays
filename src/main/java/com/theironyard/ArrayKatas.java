@@ -24,9 +24,9 @@ public class ArrayKatas {
 		double sum=0;
 
 		for (double number:numbers) {
-			if(number==0){
-				return 0;
-			}
+//			if(number==0){
+//				return 0;
+//			}
 			sum += number;
 		}
 		return sum;
@@ -53,9 +53,9 @@ public class ArrayKatas {
 //			newString =newString + string;
 //		}
 		for(int i = 0; i < strings.length; i++){
-
+			//prevent concat with nulls
 			if(strings[i] == null){
-				return null;
+				continue;
 			}
 
 			newString = newString+strings[i];
